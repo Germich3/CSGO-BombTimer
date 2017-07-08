@@ -10,7 +10,9 @@
     var io = require('socket.io')(express);
 
     console.log()
-    console.log("\tStarting CSGO Data Integration HUD "+version+" by Double0negative");
+    console.log("\tStarting CSGO Data Integration "+version+" by Germich3");
+    console.log("\thttps://github.com/Germich3/CSGO-BombTimer");
+    console.log("\tCredits to Double0negative for share his HUD");
     console.log("\thttps://github.com/Double0negative/CSGO-HUD");
 
     app.set('view engine', 'jade');
