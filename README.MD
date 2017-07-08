@@ -14,7 +14,7 @@
 
 * open CMD, type: cd where_you_extracted_the_zip (change directory).
    - in CMD: `npm install` (Only the first time).
-   - in CMD: `node server.js` (this allways to start the app).
+   - in CMD: `node server.js` (This allways to start the app).
   
 * You should then be able to connect in a web browser by going to `http://localhost:2626`.
   <br />
