@@ -8,7 +8,7 @@
   
 * Install Node.JS (NPM is included).
 
-* Put `gamestate_integration_c4.cfg` in your csgo cfg folder
+* Put <a href="https://github.com/Germich3/CSGO-BombTimer/blob/master/gamestate_integration_c4.cfg">`gamestate_integration_c4.cfg`</a> in your csgo cfg folder
   <br />
   (`steamapps/common/Counter-Strike Global Offensive/csgo/cfg/`).
 
