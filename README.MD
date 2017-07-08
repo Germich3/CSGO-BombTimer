@@ -13,7 +13,7 @@
   (`steamapps/common/Counter-Strike Global Offensive/csgo/cfg/`).
 
 * open CMD, type: cd where_you_extracted_the_zip (change directory).
-   - in CMD: `npm install` (Only the frist time).
+   - in CMD: `npm install` (Only the first time).
    - in CMD: `node server.js` (this allways to start the app).
   
 * You should then be able to connect in a web browser by going to `http://localhost:2626`.
