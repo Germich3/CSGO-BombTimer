@@ -7,7 +7,7 @@
   
 * Install Node.JS (NPM is included).
 
-* Put `gamestate_integration_hud.cfg` in your csgo cfg folder 
+* Put `gamestate_integration_hud.cfg` in your csgo cfg folder \n
   (`steamapps/common/Counter-Strike Global Offensive/csgo/cfg/`).
 
 * open CMD, type: cd where_you_extracted_the_zip (change directory).
