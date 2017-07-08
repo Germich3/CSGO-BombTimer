@@ -28,7 +28,35 @@
     app.get('/style.css', function(req, res) {
         res.sendFile(__dirname +'/public/css/style.css');
     });
+	
+	app.get('/35.mp3', function(req, res) {
+        res.sendFile(__dirname +'/public/media/35.mp3');
+    });
+	
+	app.get('/30.mp3', function(req, res) {
+        res.sendFile(__dirname +'/public/media/30.mp3');
+    });
+	
+	app.get('/25.mp3', function(req, res) {
+        res.sendFile(__dirname +'/public/media/25.mp3');
+    });
+	
+	app.get('/20.mp3', function(req, res) {
+        res.sendFile(__dirname +'/public/media/20.mp3');
+    });
+	
+	app.get('/15.mp3', function(req, res) {
+        res.sendFile(__dirname +'/public/media/15.mp3');
+    });
 
+	app.get('/10.mp3', function(req, res) {
+        res.sendFile(__dirname +'/public/media/10.mp3');
+    });
+	
+	app.get('/5.mp3', function(req, res) {
+        res.sendFile(__dirname +'/public/media/5.mp3');
+    });
+	
     io.on('connection', function(socket) {
         
     });
