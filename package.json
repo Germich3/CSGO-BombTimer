@@ -1,7 +1,7 @@
 {
-  "name": "csgo-hud",
+  "name": "csgo-bombtimer",
   "version": "0.0.1",
-  "description": "CSGO Web Hud",
+  "description": "CSGO Web timer for c4",
   "dependencies": {
     "express": "^4.13.3",
     "jade": "^1.11.0",
