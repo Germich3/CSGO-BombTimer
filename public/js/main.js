@@ -61,7 +61,7 @@ function tick() {
 		audio.src = '5.mp3';
 		audio.play();
 	}
-	else if (btime == 0) {
+	else if (btime <= 0) {
 		isOver = false;
 	}
 	else {
