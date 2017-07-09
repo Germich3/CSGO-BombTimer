@@ -5,6 +5,7 @@ var bombtime = 0;
 var flashing = false;
 var audio = new Audio();
 var isPlaying = false;
+var isOver = false;
 
 io.on("update", function(status) {
     json = JSON.parse(status);
@@ -25,40 +26,43 @@ function tick() {
 
     var btime = json.extra.round.bomb.maxTime - parseInt(new Date().getTime() / 1000 - bombtime);
 	
-	if (btime == 35 && isPlaying == false) {
+	if (btime == 35 && isPlaying == false && isOver == false) {
 		isPlaying = true;
 		audio.src = '35.mp3';
 		audio.play();
 	}
-	else if (btime == 30 && isPlaying == false) {
+	else if (btime == 30 && isPlaying == false && isOver == false) {
 		isPlaying = true;
 		audio.src = '30.mp3';
 		audio.play();
 	}
-	else if (btime == 25 && isPlaying == false) {
+	else if (btime == 25 && isPlaying == false && isOver == false) {
 		isPlaying = true;
 		audio.src = '25.mp3';
 		audio.play();
 	}
-	else if (btime == 20 && isPlaying == false) {
+	else if (btime == 20 && isPlaying == false && isOver == false) {
 		isPlaying = true;
 		audio.src = '20.mp3';
 		audio.play();
 	}
-	else if (btime == 15 && isPlaying == false) {
+	else if (btime == 15 && isPlaying == false && isOver == false) {
 		isPlaying = true;
 		audio.src = '15.mp3';
 		audio.play();
 	}
-	else if (btime == 10 && isPlaying == false) {
+	else if (btime == 10 && isPlaying == false && isOver == false) {
 		isPlaying = true;
 		audio.src = '10.mp3';
 		audio.play();
 	}
-	else if (btime == 5 && isPlaying == false) {
+	else if (btime == 5 && isPlaying == false && isOver == false) {
 		isPlaying = true;
 		audio.src = '5.mp3';
 		audio.play();
+	}
+	else if (btime == 0) {
+		isOver = false;
 	}
 	else {
 		switch(btime) {
@@ -108,6 +112,7 @@ function tick() {
 			$(".time").css("font-size", "7em");
 			$(".time").html("Over");
 			$(".color").css('background-color', 'black');
+			isOver = true;
         }
 		
     }
